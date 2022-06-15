@@ -1,0 +1,29 @@
+target/
+lib_managed/
+src_managed/
+project/boot/
+
+.idea
+*.iml
+
+*.swp
+
+.DS_Store
+
+/tmp
+
+/metastore_db/
+derby.log
+
+# metals / vs code ignores
+.metals
+.vscode
+.bloop
+**/metals.sbt
+
+.bsp/
+
+# Notebooks
+.ipynb_checkpoints
+docs/.jekyll-cache/
+docs/target/
