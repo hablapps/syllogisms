@@ -15,7 +15,7 @@ object Celarent extends Syllogism {
   type Conclusion = (x: Entity) => x.S => Not[x.P]
 
   def proof(major: Major, minor: Minor): Conclusion =
-    (x: Entity) => (s: x.S) => (major(x) compose minor(x)) apply s
+    x => major(x) compose minor(x)
 
 
 }
