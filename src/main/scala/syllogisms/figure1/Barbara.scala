@@ -1,7 +1,7 @@
 package syllogisms
 package figure1
 
-object Barbara extends Syllogism {
+object Barbara extends Syllogism:
 
   //All M are P
   type Major = (x: Entity) => x.M => x.P
@@ -14,5 +14,3 @@ object Barbara extends Syllogism {
 
   def proof(major: Major, minor: Minor): Conclusion =
     x => major(x) compose minor(x)
-
-}

@@ -1,10 +1,7 @@
 package propositions
 
-trait Sugar {
+trait Sugar:
 
-  implicit class Contradicts[P](np: P => Nothing){
+  extension [P](np: P => Nothing)
     def contradicts: P => Nothing =
       np
-  }
-
-}

@@ -3,7 +3,7 @@ package figure1
 
 import propositions.*
 
-object Celarent extends Syllogism {
+object Celarent extends Syllogism:
 
   //No M is P
   type Major = (x: Entity) => x.M => Not[x.P]
@@ -16,6 +16,3 @@ object Celarent extends Syllogism {
 
   def proof(major: Major, minor: Minor): Conclusion =
     x => major(x) compose minor(x)
-
-
-}
