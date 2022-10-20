@@ -1,7 +1,6 @@
 package propositions
 
-trait Tautologies {
+trait Tautologies:
 
   def contraposition[P, Q](f: P => Q): Not[Q] => Not[P] =
     nq => p => nq contradicts f(p)
-}
